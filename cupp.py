@@ -112,7 +112,13 @@ def komb(seq, start, special=""):
         for mystr1 in start:
             yield mystr + special + mystr1
 
-
+def ethical_warning():
+    """ === NEW === """
+    print("[!] WARNING: Use this tool ONLY on accounts you own or have permission for.")
+    confirm = input("Do you have explicit authorization? (yes/no): ").lower()
+    if confirm != "yes":
+        sys.exit("[ABORTED] Authorization not confirmed.")
+        
 # print list to file counting words
 
 
